@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'My toolbox and abilities',
+    'title' => 'Mes spécialités et outils',
     'languages' => 'Vous pouvez me contacter en',
     'backend' => 'back-end',
     'frontend' => 'front-end',

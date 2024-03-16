@@ -15,10 +15,8 @@
         <div id="introduction" class="relative h-screen">
             <img src="/images/desk-laptop-bs-as.jpeg" alt="" class="fixed inset-0 -z-10 h-full w-full object-cover">
             <div class="-mt-10 pt-4 before:block before:max-h-96 before:absolute before:-inset-1 before:-skew-y-3 before:bg-amber-50 before:bg-opacity-70 before:shadow-2xl">
-                <div class="relative py-24 sm:py-24">
-                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                        <x-presentation />
-                    </div>
+                <div class="relative overflow-hidden h-80 md:h-auto pt-24 pb-12 sm:py-24 mx-auto max-w-7xl px-6 lg:px-8">
+                    <x-presentation />
                 </div>
             </div>
         </div>

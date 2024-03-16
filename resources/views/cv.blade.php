@@ -19,7 +19,7 @@
             <div class="grid gap-x-8 gap-y-4 grid-cols-2 bg-white">
                 <!-- Expérience et Formation -->
                 <div class="pl-3">
-                    <x-layout.h2>{{ __('template.laboral_experience') }}</x-h2>
+                    <x-layout.h2>{{ __('template.laboral_experience') }}</x-layout.h2>
                     <div>
                         @foreach(__('cv.experience') as $experience)
                             <x-work-experience
@@ -37,7 +37,7 @@
                 </div>
                 <!-- Langues et Informatique -->
                 <div class="pr-3 space-y-4">
-                    <x-layout.h2>{{ __('template.computer') }}</x-h2>
+                    <x-layout.h2>{{ __('template.computer') }}</x-layout.h2>
                     <div class="grid gap-x-8 gap-y-6 grid-cols-2">
                         <x-cv.ability ability="Back-end" details="PHP, Symfony, PHPunit" rate="11/12" />
                         <x-cv.ability ability="SQL" details="MySQL, SQLite" rate="9/12" />
@@ -47,12 +47,12 @@
                         <x-cv.ability ability="Mobile" details="React Native" rate="4/12" />
                     </div>
 
-                    <x-layout.h2>{{ __('template.languages') }}</x-h2>
+                    <x-layout.h2>{{ __('template.languages') }}</x-layout.h2>
                     <x-cv.language :ability="__('template.lang.english')" details="C2 Proficient (EF SET)" rate="9/12" />
                     <x-cv.language :ability="__('template.lang.spanish')" :details="__('template.bilingual')" rate="11/12" />
                     <x-cv.language :ability="__('template.lang.french')" details="" rate="full" />
 
-                    <x-layout.h2>{{ __('template.education') }}</x-h2>
+                    <x-layout.h2>{{ __('template.education') }}</x-layout.h2>
                     <div>
                         @foreach(__('cv.education') as $education)
                             <div class="flex">

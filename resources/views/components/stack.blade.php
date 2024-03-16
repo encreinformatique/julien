@@ -1,8 +1,8 @@
-<div id="abilities" class="relative h-fit xl:h-screen py-3 px-6 md:py-16 md:px-24">
+<div id="abilities" class="relative h-fit xl:h-screen mb-6 py-6 px-6 md:py-16 md:px-24 md:mb-0">
     <div class="text-gray-900 text-xl bg-white py-3 px-6 md:py-16 md:px-24 rounded-lg shadow-gray-400-200 shadow-xl">
-        <x-layout.h2>{{ __('stack.title') }}</x-h2>
+        <x-layout.h2>{{ __('stack.title') }}</x-layout.h2>
 
-        <x-layout.h3>{{ __('stack.backend') }}</x-h3>
+        <x-layout.h3>{{ __('stack.backend') }}</x-layout.h3>
         <div class="-mx-6 grid grid-cols-3 gap-1 overflow-hidden sm:mx-0 sm:rounded-2xl md:grid-cols-7">
             <div class="bg-gray-400/5 rounded-xl p-4  flex flex-col justify-between">
                 <x-icon.php/>
@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <x-layout.h3>{{ __('stack.frontend') }}</x-h3>
+        <x-layout.h3>{{ __('stack.frontend') }}</x-layout.h3>
         <div class="-mx-6 grid grid-cols-3 gap-1 overflow-hidden sm:mx-0 sm:rounded-2xl md:grid-cols-7">
             <div class="bg-gray-400/5 rounded-xl p-4  flex flex-col justify-between">
                 <x-icon.html/>
@@ -62,7 +62,7 @@
             </div>
         </div>
 
-        <x-layout.h3>{{ __('stack.tools') }}</x-h3>
+        <x-layout.h3>{{ __('stack.tools') }}</x-layout.h3>
         <div class="-mx-6 grid grid-cols-3 gap-1 overflow-hidden sm:mx-0 sm:rounded-2xl md:grid-cols-7">
             <div class="bg-gray-400/5 rounded-xl p-4 flex flex-col justify-between">
                 <x-icon.github/>
@@ -90,16 +90,14 @@
             </div>
         </div>
 
-        <x-layout.h3>{{ __('stack.languages') }}</x-h3>
-        <p class="mt-5">
-            <span class="flex justify-around mt-3">
-                <span class="font-bold">{{ __('template.lang.english') }} <span
-                        class="text-gray-600 italic font-normal ml-2">(C2, EF SET)</span></span>
-                <span class="font-bold">{{ __('template.lang.spanish') }}<span
-                        class="text-gray-600 font-normal italic ml-2">({{ __('template.bilingual') }})</span></span>
-                <span class="font-bold">{{ __('template.lang.french') }}<span
-                        class="text-gray-600 italic font-normal ml-2">({{ __('template.mother_tongue') }})</span></span>
-            </span>
+        <x-layout.h3>{{ __('stack.languages') }}</x-layout.h3>
+        <p class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-8">
+            <span class="w-full md:w-auto font-bold">{{ __('template.lang.english') }} <span
+                    class="text-gray-600 italic font-normal ml-2">(C2, EF SET)</span></span>
+            <span class="w-full md:w-auto font-bold">{{ __('template.lang.spanish') }}<span
+                    class="text-gray-600 font-normal italic ml-2">({{ __('template.bilingual') }})</span></span>
+            <span class="w-full md:w-auto font-bold">{{ __('template.lang.french') }}<span
+                    class="text-gray-600 italic font-normal ml-2">({{ __('template.mother_tongue') }})</span></span>
         </p>
     </div>
 </div>

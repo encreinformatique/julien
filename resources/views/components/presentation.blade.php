@@ -1,17 +1,21 @@
 <div class="mx-auto max-w-4xl text-left space-y-8">
-    <h1 class="text-4xl font-bold leading-10 text-gray-900 sm:text-6xl">
+    <h1 class="text-2xl mt-8 font-bold leading-10 text-gray-900 sm:text-6xl md:mt-0">
         {!! __('home.title') !!}<br>
-        {{ __('home.and') }}
-        <span class="swipe-traits overflow-hidden">
-            @foreach(__('home.i_am') as $idx => $i_am)
-                <span class="item w-full transition-all duration-500 ease-in-out @if($idx === 0)inline @else opacity-0 scale-0 @endif">{{ $i_am }}</span>
-            @endforeach
-{{--            <span class="item w-full transition-all inline">technophile</span>--}}
-{{--            <span class="item w-full transition-all opacity-0 hidden">optimiste</span>--}}
-{{--            <span class="item w-full transition-all opacity-0 hidden">trilingue</span>--}}
-{{--            <span class="item w-full transition-all opacity-0 hidden">fan de BD</span>--}}
-{{--            <span class="item w-full transition-all opacity-0 hidden">amateur de bonnes recettes</span>--}}
-{{--            <span class="item w-full transition-all opacity-0 hidden">cinéphile</span>--}}
+        <span class="flex">
+            <span>{{ __('home.and') }}</span>
+            <span class="ml-1.5 flex-1">
+                <span class="swipe-traits relative overflow-hidden">
+                    @foreach(__('home.i_am') as $idx => $i_am)
+                        <span class="item w-full transition-all duration-500 ease-in-out @if($idx === 0)inline @else opacity-0 scale-0 @endif">{{ $i_am }}</span>
+                    @endforeach
+                    {{--            <span class="item w-full transition-all inline">technophile</span>--}}
+                    {{--            <span class="item w-full transition-all opacity-0 hidden">optimiste</span>--}}
+                    {{--            <span class="item w-full transition-all opacity-0 hidden">trilingue</span>--}}
+                    {{--            <span class="item w-full transition-all opacity-0 hidden">fan de BD</span>--}}
+                    {{--            <span class="item w-full transition-all opacity-0 hidden">amateur de bonnes recettes</span>--}}
+                    {{--            <span class="item w-full transition-all opacity-0 hidden">cinéphile</span>--}}
+                </span>
+            </span>
         </span>
 {{--        {{ __('home.description') }}--}}
     </h1>

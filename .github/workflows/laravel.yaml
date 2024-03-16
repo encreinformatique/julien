@@ -19,6 +19,9 @@ jobs:
       - name: Run composer install
         run: composer install -n --prefer-dist
 
+      - name: Install et build node
+        run: npm install && npm run build
+
       - name: Prepare Laravel Application
         run: |
           cp .env.example .env

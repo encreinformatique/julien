@@ -68,6 +68,10 @@ import isInViewport from "./magellan.js";
     }
 
     document.addEventListener("DOMContentLoaded", () => {
+        checkPosition();
+        /*
+         * Add the hash if we changed the language earlier.
+         */
         switcher.querySelectorAll('a').forEach((link) => {
             const url = new URL(link.href);
             url.hash = window.location.hash;
@@ -82,9 +86,7 @@ import isInViewport from "./magellan.js";
             }
         });
     });
-    document.addEventListener('scroll', function () {
-        checkPosition();
-    }, {
+    document.addEventListener('scroll', checkPosition, {
         passive: true
     });
 })();

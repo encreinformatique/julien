@@ -12,7 +12,7 @@
   }
   ```
 -->
-<div id="contact" class="relative h-screen py-0 px-6 md:px-24 text-gray-900 bg-white">
+<div id="contact" class="relative h-auto md:h-screen pb-6 md:py-0 px-6 md:px-24 text-gray-900 bg-white">
     <div class="hidden md:block lg:absolute lg:inset-0 lg:left-1/2">
         <img class="h-64 w-full bg-gray-50 object-cover sm:h-80 lg:absolute lg:h-full" src="/images/contact.jpg" alt="">
     </div>
