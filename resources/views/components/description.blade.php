@@ -1,6 +1,6 @@
 <div id="description" class="relative h-fit xl:h-screen max-w-7xl mx-auto py-3 px-6 md:py-16 md:px-24">
     <div class="text-gray-900 text-lg bg-white py-3 px-6 rounded-lg shadow-gray-400-200 shadow-xl md:py-16 md:px-24">
-        <x-layout.h2>{{ __('presentation.title') }}</x-h2>
+        <x-layout.h2>{{ __('presentation.title') }}</x-layout.h2>
         <p class="my-3 mt-6">{!! __('presentation.me') !!}</p>
         <p class="my-3">{{ __('presentation.you') }}</p>
         <nav class="grid grid-cols-1 md:grid-cols-3 gap-2 mb-3">

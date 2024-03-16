@@ -1,7 +1,7 @@
 <div id="portfolio" class="relative bg-sky-100 bg-opacity-95 min-h-screen py-3 px-6 md:py-16 md:px-24">
     <div class="mx-auto px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:max-w-4xl">
-            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Portfolio</h2>
+            <x-layout.h2>Portfolio</x-layout.h2>
             <p class="mt-2 text-lg leading-8 text-gray-600">{{ __('portfolio.description') }}</p>
             <p class="mt-2 text-lg leading-8 text-gray-600">
                 {!! __('portfolio.current_site') !!}
