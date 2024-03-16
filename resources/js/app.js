@@ -1,8 +1,14 @@
 import './bootstrap';
 import './magellan';
 import isInViewport from "./magellan.js";
+import contactForm from "./contact.js";
 
 (function () {
+    contactForm();
+
+    /*
+     * Animation of the characters traits.
+     */
     const flipItems = document.querySelectorAll('.swipe-traits .item')
     let next = 0;
 
@@ -33,7 +39,6 @@ import isInViewport from "./magellan.js";
             }
         });
     }, 2000);
-
 
     const sections = ['introduction', 'description', 'abilities', 'portfolio', 'contact'];
     const switcher = document.getElementById('languages');
