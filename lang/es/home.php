@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'and' => 'y soy',
+    'and' => 'y',
     'title' => 'Hola 👋, me llamo Julien,<br>soy desarrollador full-stack',
     'description' => 'Soy desarrollador full-stack desce hace más de 10 años. Hoy estoy buscando un nuevo proyecto emocionante. ¡Podría ser el tuyo!',
     'download' => 'Descargar mi CV',
