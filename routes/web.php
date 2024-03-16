@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\ContactController;
 use App\Http\Controllers\DownloadCvController;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
@@ -30,3 +31,7 @@ Route::get('/{locale}', function (string $locale) {
 })->name('homepage');
 
 Route::get('/cv/{locale}', DownloadCvController::class)->name('download');
+
+Route::middleware('web')
+    ->post('/api/contact', ContactController::class)
+    ->name('api.contact');
