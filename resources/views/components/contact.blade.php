@@ -21,11 +21,7 @@
             <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900">{{ __('contact.title') }}</h2>
                 <p class="mt-2 text-lg leading-8 text-gray-600">{{ __('contact.description') }}</p>
-                <div class="bg-green-600 px-6 py-3 rounded hidden" id="contact-msg">
-                    Thank you for your message, I will contact you shortly.
-                </div>
-                <form id="form-contact" action="{{ route('api.contact')  }}" method="POST" class="mt-8">
-                    @csrf
+                <form action="#" method="POST" class="mt-8">
                     <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                         <div class="sm:col-span-2">
                             <x-form.label for="name" required="true">{{ __('contact.name') }}</x-form.label>
@@ -55,12 +51,6 @@
                             <x-form.label for="company">{{ __('contact.company') }}</x-form.label>
                             <div class="mt-2.5">
                                 <input type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6">
-                            </div>
-                        </div>
-                        <div class="hidden sm:col-span-2">
-                            <x-form.label for="company">url</x-form.label>
-                            <div class="mt-2.5">
-                                <input type="text" name="url" id="url" autocomplete="organization" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6">
                             </div>
                         </div>
 {{--                        <div class="sm:col-span-2">--}}
