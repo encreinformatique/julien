@@ -27,6 +27,10 @@
         </a>
     </div>
     <div class="flex flex-col flex-1 space-y-3 pt-16 pb-4 justify-end">
+        <a href="{{ config('cv.website')  }}" target="_blank" class="flex flex-row text-sky-50 hover:text-sky-400">
+            <x-icon.web />
+            {{ str_replace('https://', '', config('cv.website')) }}
+        </a>
         <a href="{{ config('cv.linkedin')  }}" target="_blank" class="flex flex-row text-sky-50 hover:text-sky-400">
             <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
             <x-icon.linkedin />
