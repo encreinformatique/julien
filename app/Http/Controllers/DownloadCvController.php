@@ -8,7 +8,7 @@ use function Spatie\LaravelPdf\Support\pdf;
 
 class DownloadCvController extends Controller
 {
-    public function __invoke(string $locale): PdfBuilder
+    public function __invoke(string $locale)//: PdfBuilder
     {
         if (! in_array($locale, ['en', 'es', 'fr'])) {
             abort(400);

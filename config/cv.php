@@ -18,5 +18,6 @@ return [
     'email' => env('APP_CV_EMAIL', ''),
     'github' => env('APP_CV_GITHUB', ''),
     'linkedin' => env('APP_CV_LINKEDIN', ''),
+    'website' => env('APP_CV_WEBSITE', ''),
     'phone' => env('APP_CV_PHONE', ''),
 ];
