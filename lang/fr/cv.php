@@ -20,15 +20,17 @@ return [
     ],
     'experience' => [
         new WorkExperience(
-            'Développeur Web freelance',
+            'Développeur Web WebsetStudio',
             [
-                'Projets Symfony, Nuxt et Wordpress',
+                'Projets Symfony, Nuxt (VueJS) et Wordpress',
                 'Création d’e-commerces Sylius',
                 'Administration de serveurs VPS',
                 'CI (CircleCI, Github Actions)',
                 'Software as a Service pour entreprises',
             ],
-            2018
+            2018,
+            null,
+            'Barcelona (ES), Buenos Aires (AR)'
         ),
         new WorkExperience(
             'Directeur Technique 3JBA',

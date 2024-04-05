@@ -14,13 +14,13 @@ return [
         [
             'school' => 'IÉSEG, Lille',
             'title' => 'Bachelor',
-            'details' => "Contabilidad, logistica, TI, economía",
+            'details' => "Contabilidad, logística, TI, economía",
             'year' => '2005'
         ],
     ],
     'experience' => [
         new WorkExperience(
-            'Programador Web freelance',
+            'Programador Web WebsetStudio',
             [
                 'Proyectos Symfony, Nuxt y Wordpress',
                 'Creación de e-commerces Sylius',
@@ -28,7 +28,9 @@ return [
                 'CI (CircleCI, Github Actions',
                 'Software as a Service para empresas',
             ],
-            2018
+            2018,
+            null,
+            'España, Argentina'
         ),
         new WorkExperience(
             'Director Técnico 3JBA',
@@ -56,7 +58,7 @@ return [
             [
                 'Reclutamiento de programadores',
                 'Prog. de la plataforma de afiliación',
-                'Gestión de la herramienta de cuestionarios',
+                'Gestión de la herramienta',
                 'Servicios de envíos de email',
             ],
             2007,

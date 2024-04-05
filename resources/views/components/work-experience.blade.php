@@ -1,5 +1,5 @@
 <div class="flex mt-5">
-    <span class="min-w-16 mt-1">{{ $from }} -<br>@if($until) {{ $until }} @else auj. @endif</span>
+    <span class="min-w-16 mt-1">{{ $from }} -<br>@if($until) {{ $until }} @else {{ __('template.today') }} @endif</span>
     <div>
         <h3 class="flex-1 text-xl font-bold tracking-tight">
             {{ $jobTitle  }}
