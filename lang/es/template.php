@@ -12,5 +12,6 @@ return [
         'french' => 'Francés',
     ],
     'mother_tongue' => 'lengua materna',
-    'systems' => 'Sistemas'
+    'systems' => 'Sistemas',
+    'today' => 'act.',
 ];
