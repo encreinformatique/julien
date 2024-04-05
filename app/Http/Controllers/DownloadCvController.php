@@ -16,7 +16,7 @@ class DownloadCvController extends Controller
 
         App::setLocale($locale);
 
-        return view('cv');
+        //return view('cv');
         $fileName = sprintf('jdevergnies-%s.pdf', $locale);
         return pdf()
             ->view('cv')
