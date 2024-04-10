@@ -3,12 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\App;
-use Spatie\LaravelPdf\PdfBuilder;
 use function Spatie\LaravelPdf\Support\pdf;
 
 class DownloadCvController extends Controller
 {
-    public function __invoke(string $locale)//: PdfBuilder
+    public function __invoke(string $locale)
     {
         if (! in_array($locale, ['en', 'es', 'fr'])) {
             abort(400);
