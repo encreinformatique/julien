@@ -18,6 +18,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return redirect('/es', 301);
 });
+Route::get('/site.webmanifest', function () {
+    return response()->json([
+        'display' => 'standalone',
+        'short_name' => env('APP_NAME'),
+        "background_color" => "#ffffff",
+        "theme_color" => "rgb(3, 105, 161)",
+    ]);
+})->name('webmanifest');
 
 Route::get('/{locale}', function (string $locale) {
     if (! in_array($locale, ['en', 'es', 'fr'])) {
