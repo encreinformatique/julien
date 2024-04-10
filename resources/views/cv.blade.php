@@ -7,7 +7,7 @@
         <title>Julien Devergnies</title>
 
         <!-- Styles -->
-        @vite('resources/css/app.css')
+        @vite('resources/css/welcome.css')
     </head>
     <body class="min-h-screen bg-gray-200">
         <main class="p-0 w-full mx-auto overflow-hidden bg-white min-h-screen">

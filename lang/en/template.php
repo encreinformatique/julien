@@ -2,6 +2,7 @@
 
 return [
     'laboral_experience' => 'Profesional experience',
+    'back' => 'back',
     'bilingual' => 'Bilingual',
     'computer' => 'Technology',
     'education' => 'Education',

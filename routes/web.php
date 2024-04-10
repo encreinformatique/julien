@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\DownloadCvController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -43,4 +44,5 @@ Route::middleware('cache.headers:public;max_age=2628000;etag')->group(function (
  */
 
 Route::get('/{locale}', HomeController::class)->name('homepage');
+Route::get('/{locale}/blog/{slug}', BlogController::class)->name('blog');
 Route::get('/cv/{locale}', DownloadCvController::class)->name('download');

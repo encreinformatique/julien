@@ -16,6 +16,8 @@ module.exports = {
         'w-3/12',
         'w-2/12',
         'w-1/12',
+        'whitespace-pre',
+        'text-green-800'
     ],
     theme: {
         extend: {},

@@ -2,6 +2,7 @@
 
 return [
     'laboral_experience' => 'Experiencia profesional',
+    'back' => 'atrás',
     'bilingual' => 'Bilingüe',
     'computer' => 'Informática',
     'education' => 'Formación',

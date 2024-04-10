@@ -7,7 +7,7 @@
         <title>Julien Devergnies</title>
         <link rel="manifest" href="{{ route('webmanifest') }}">
         <!-- Styles -->
-        @vite('resources/css/app.css')
+        @vite('resources/css/welcome.css')
     </head>
     <body class="bg-white h-full overflow-x-hidden">
     <div class="fixed top-0 left-0 h-4 text-red-500 z-50" id="message"></div>
@@ -46,6 +46,6 @@
         </a> @endif
     </div>
 
-        @vite('resources/js/app.js')
+        @vite('resources/js/welcome.js')
     </body>
 </html>
