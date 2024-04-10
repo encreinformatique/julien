@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\DownloadCvController;
-use Illuminate\Support\Facades\App;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,18 +15,32 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/**
+ * Redirections..
+ */
+
 Route::get('/', function () {
     return redirect('/es', 301);
 });
 
-Route::get('/{locale}', function (string $locale) {
-    if (! in_array($locale, ['en', 'es', 'fr'])) {
-        abort(400);
-    }
+/**
+ * Cached routes.
+ */
 
-    App::setLocale($locale);
+Route::middleware('cache.headers:public;max_age=2628000;etag')->group(function () {
+    Route::get('/site.webmanifest', function () {
+        return response()->json([
+            'display' => 'standalone',
+            'short_name' => env('APP_NAME'),
+            "background_color" => "#ffffff",
+            "theme_color" => "rgb(3, 105, 161)",
+        ]);
+    })->name('webmanifest');
+});
 
-    return view('welcome');
-})->name('homepage');
+/**
+ * Regular routes.
+ */
 
+Route::get('/{locale}', HomeController::class)->name('homepage');
 Route::get('/cv/{locale}', DownloadCvController::class)->name('download');

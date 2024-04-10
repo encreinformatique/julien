@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Julien Devergnies</title>
-
+        <link rel="manifest" href="{{ route('webmanifest') }}">
         <!-- Styles -->
         @vite('resources/css/app.css')
     </head>
