@@ -14,5 +14,5 @@ return [
     ],
     'mother_tongue' => 'lengua materna',
     'systems' => 'Sistemas',
-    'today' => 'act.',
+    'today' => 'hoy',
 ];

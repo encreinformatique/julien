@@ -10,20 +10,23 @@
 
 namespace App\Models;
 
+use DateTime;
+
 final class WorkExperience
 {
     private string $jobTitle;
     private ?string $location = null;
-    private int $from;
-    private ?int $until;
+    private DateTime $from;
+    private ?DateTime $until;
     private array $feats;
 
     public function __construct(
         string $title,
         array $feats,
-        int $from,
-        ?int $until = null,
-        ?string $location = null
+        DateTime $from,
+        ?DateTime $until = null,
+        ?string $location = null,
+        private array $stack = []
     ) {
         $this->jobTitle = $title;
         $this->location = $location;
@@ -42,12 +45,12 @@ final class WorkExperience
         return $this->location;
     }
 
-    public function getFrom(): int
+    public function getFrom(): DateTime
     {
         return $this->from;
     }
 
-    public function getUntil(): ?int
+    public function getUntil(): ?DateTime
     {
         return $this->until;
     }
@@ -55,5 +58,10 @@ final class WorkExperience
     public function getFeats(): array
     {
         return $this->feats;
+    }
+
+    public function getStack(): array
+    {
+        return $this->stack;
     }
 }
