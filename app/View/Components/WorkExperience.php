@@ -2,11 +2,11 @@
 
 namespace App\View\Components;
 
+use Carbon\Carbon;
 use Closure;
 use DateTime;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
-use Jenssegers\Date\Date;
 
 class WorkExperience extends Component
 {
@@ -20,9 +20,9 @@ class WorkExperience extends Component
         public ?string   $location = null,
         public array $stack = []
     ) {
-        $this->from = Date::createFromFormat('d m Y', $from->format('d m Y'));
+        $this->from = Carbon::createFromFormat('d m Y', $from->format('d m Y'));
         if ($until) {
-            $this->until = Date::createFromFormat('d m Y', $until->format('d m Y'));
+            $this->until = Carbon::createFromFormat('d m Y', $until->format('d m Y'));
         }
     }
 
