@@ -1,6 +1,6 @@
 <div class="flex bg-sky-700 text-white py-3 px-6">
     <div class="mr-6">
-        <img class="h-44 w-44 rounded-full shadow-sm shadow-gray-300" src="https://media.licdn.com/dms/image/C4E03AQHbhjcN0phN8g/profile-displayphoto-shrink_800_800/0/1516369428547?e=1715817600&v=beta&t=4I0Pu8HWXOv4OPFE6oy3EWyOJjhTnV7akw1xECZVxlE" alt="">
+        <img class="h-44 w-44 rounded-full shadow-sm shadow-gray-300" src="https://media.licdn.com/dms/image/D4D03AQFSgp2oi6FOGQ/profile-displayphoto-shrink_400_400/0/1716930074144?e=1723680000&v=beta&t=YkyIopmOhIbSPtbuGMytQHFjjn8gg0mnIR_4frdL0Tc" alt="">
     </div>
     <div class="flex flex-col flex-1 space-y-3 pb-4">
         <h1 class="mt-2 text-xl font-semibold tracking-tight text-sky-50">Julien Devergnies</h1>

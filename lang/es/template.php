@@ -2,6 +2,7 @@
 
 return [
     'laboral_experience' => 'Experiencia profesional',
+    'back' => 'atrás',
     'bilingual' => 'Bilingüe',
     'computer' => 'Informática',
     'education' => 'Formación',
@@ -13,5 +14,5 @@ return [
     ],
     'mother_tongue' => 'lengua materna',
     'systems' => 'Sistemas',
-    'today' => 'act.',
+    'today' => 'hoy',
 ];

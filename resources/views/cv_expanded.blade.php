@@ -16,10 +16,10 @@
 {{--        >--}}
             <x-header />
             <x-context />
-            <div class="grid gap-x-8 gap-y-4 grid-cols-2 bg-white">
+            <div class="px-5 pb-0 bg-white">
                 <!-- Expérience et Formation -->
-                <div class="pl-3">
-                    <x-layout.h2>{{ __('template.laboral_experience') }}</x-layout.h2>
+                <div>
+                    <x-layout.h2>{{ __('template.laboral_experience') }}</x-layout.h2><symfony></symfony>
                     <div>
                         @foreach(__('cv.experience') as $experience)
                             <x-work-experience
@@ -27,6 +27,7 @@
                                 :from="$experience->getFrom()"
                                 :until="$experience->getUntil()"
                                 :location="$experience->getLocation()"
+                                :stack="$experience->getStack()"
                             >
                                 @foreach($experience->getFeats() as $feat)
                                 <li>{{ $feat }}</li>
@@ -35,8 +36,11 @@
                         @endforeach
                     </div>
                 </div>
+
+                @pageBreak
+
                 <!-- Langues et Informatique -->
-                <div class="pr-3 space-y-4">
+                <div class="space-y-6 mb-0 min-h-screen">
                     <x-layout.h2>{{ __('template.computer') }}</x-layout.h2>
                     <div class="grid gap-x-8 gap-y-6 grid-cols-2">
                         <x-cv.ability ability="Back-end" details="PHP, Symfony, PHPunit" rate="11/12" />
@@ -55,7 +59,7 @@
                     <x-layout.h2>{{ __('template.education') }}</x-layout.h2>
                     <div>
                         @foreach(__('cv.education') as $education)
-                            <div class="flex">
+                            <div class="flex mb-3">
                                 <span class="min-w-16 mt-1">{{ $education['year'] }}</span>
                                 <div>
                                     <h3 class="flex-1 text-xl font-bold tracking-tight">
