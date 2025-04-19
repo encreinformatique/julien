@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
-use Jenssegers\Date\Date;
 use function Spatie\LaravelPdf\Support\pdf;
 
 class DownloadCvController extends Controller
@@ -16,7 +16,7 @@ class DownloadCvController extends Controller
         }
 
         App::setLocale($locale);
-        Date::setLocale($locale);
+        Carbon::setLocale($locale);
 
         $view = 'cv';
         if ($request->query->getBoolean('expanded')) {
