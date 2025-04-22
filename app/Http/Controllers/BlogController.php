@@ -10,24 +10,26 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post;
 use Illuminate\View\View;
+use Statamic\Facades\Entry;
 
 final class BlogController extends Controller
 {
-    public function __invoke(string $locale, string $slug): View
+    public function index(string $locale): View
     {
-        $article = Post::find(1)->translations()->where('slug', $slug)->where('locale', $locale)->firstOrFail();
-        $content = $article->body;
-        $content = str_replace('<a ', '<a class="text-sky-600 hover:text-sky-400 hover:underline" ', $content);
-        $content = str_replace('<p>', '<p class="my-3 text-lg text-justify">', $content);
-        $content = str_replace('<code>', '<code class="whitespace-pre text-green-800">', $content);
+        $page = Entry::query()
+            ->where('collection', 'pages')
+            ->where('slug', 'blog')
+            ->first();
+        $entries = Entry::query()
+            ->where('collection', 'pages')
+            ->where('parent', '=', $page->id)
+            ->where('published', '=', true)
+            ->orderBy('publication', 'desc')
+            ->limit(12)
+            //->take(10)
+            ->get();
 
-        return view('blog.detail', [
-            'locale' => $locale,
-            'slug' => $slug,
-            'article' => $article,
-            'content' => $content,
-        ]);
+        return view('blog.index', ['entries' => $entries, 'page' => $page]);
     }
 }

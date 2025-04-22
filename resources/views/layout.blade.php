@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Julien Devergnies</title>
+    <title>{{ $title ?? 'Julien Devergnies' }}</title>
     <link rel="manifest" href="{{ route('webmanifest') }}">
+    @include('partials/seo')
     @vite('resources/css/app.css')
 </head>
 <body class="bg-white h-full overflow-x-hidden">
 
 @yield('navigation')
 
-@yield('content')
+@yield('body')
 
 {{--    <div id="languages" class="fixed top-5 right-5 flex flex-col space-y-2">--}}
 {{--        @if(app()->getLocale() !== 'en')--}}

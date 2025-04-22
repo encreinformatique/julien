@@ -42,8 +42,8 @@ return [
                 'Technical team leader (3-5 people)',
                 'API REST',
             ],
-            2013,
-            2018,
+            (new DateTime())->setDate(2013, 6, 1),
+            (new DateTime())->setDate(2018, 4, 1),
             'Barcelona, Spain'
         ),
         new WorkExperience(
@@ -53,8 +53,8 @@ return [
                 'Technical teams management (prog., design and email)',
                 'Retargeting solutions',
             ],
-            2012,
-            2013,
+            (new DateTime())->setDate(2012, 1, 1),
+            (new DateTime())->setDate(2013, 4, 1),
             'Barcelona, Spain'
         ),
         new WorkExperience(
@@ -65,8 +65,8 @@ return [
                 'Gestion de l\'outil de questionnaires',
                 'Services d’envoi d’emails',
             ],
-            2007,
-            2011,
+            (new DateTime())->setDate(2007, 11, 1),
+            (new DateTime())->setDate(2011, 10, 1),
             'Barcelona, Spain'
         ),
     ],

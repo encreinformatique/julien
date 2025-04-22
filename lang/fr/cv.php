@@ -28,7 +28,7 @@ return [
                 'CI (CircleCI, Github Actions)',
                 'Software as a Service pour entreprises',
             ],
-            2018,
+            (new DateTime())->setDate(2018, 4, 1),
             null,
             'Barcelona (ES), Buenos Aires (AR)'
         ),
@@ -39,8 +39,8 @@ return [
                 'Direction équipe technique (3-5 pers.)',
                 'API REST',
             ],
-            2013,
-            2018,
+            (new DateTime())->setDate(2013, 6, 1),
+            (new DateTime())->setDate(2018, 4, 1),
             'Barcelona, Espagne'
         ),
         new WorkExperience(
@@ -49,8 +49,8 @@ return [
                 'Direction équipes techniques (dév., design et email)',
                 'Solutions de retargeting publicitaire',
             ],
-            2012,
-            2013,
+            (new DateTime())->setDate(2012, 1, 1),
+            (new DateTime())->setDate(2013, 4, 1),
             'Barcelona, Espagne'
         ),
         new WorkExperience(
@@ -61,8 +61,8 @@ return [
                 'Gestion de l\'outil de questionnaires',
                 'Services d’envoi d’emails',
             ],
-            2007,
-            2011,
+            (new DateTime())->setDate(2007, 11, 1),
+            (new DateTime())->setDate(2011, 10, 1),
             'Barcelona, Espagne'
         ),
     ],

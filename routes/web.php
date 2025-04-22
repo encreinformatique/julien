@@ -43,7 +43,7 @@ Route::middleware('cache.headers:public;max_age=2628000;etag')->group(function (
  * Regular routes.
  */
 
-Route::get('/{locale}', HomeController::class)->name('homepage');
-Route::get('/{locale}/blog/{slug}', BlogController::class)->name('blog');
-Route::get('/cv/{locale}', DownloadCvController::class)->name('download');
-Route::get('/cv-seo/{locale}', 'App\Http\Controllers\DownloadCvController@seo')->name('download_seo');
+Route::get('/{locale}', HomeController::class)->name('homepage')->where('locale', '(es|en|fr)');
+Route::get('/{locale}/blog', [BlogController::class, 'index'])->name('blog')->where('locale', '(es|en|fr)');
+Route::get('/cv/{locale}', DownloadCvController::class)->name('download')->where('locale', '(es|en|fr)');
+Route::get('/cv-seo/{locale}', 'App\Http\Controllers\DownloadCvController@seo')->name('download_seo')->where('locale', '(es|en|fr)');
