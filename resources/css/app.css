@@ -50,8 +50,10 @@ article {
         padding-bottom: 0.275rem;
 
         code {
-            margin: 1.5em 1rem;
+            margin: 1.5em 1rem 0;
+            padding-bottom: 1.5em;
             display: block;
+            overflow-x: auto;
         }
     }
 

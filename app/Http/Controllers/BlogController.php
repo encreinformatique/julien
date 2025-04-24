@@ -17,8 +17,13 @@ final class BlogController extends Controller
 {
     public function index(string $locale): View
     {
+        $localePage = Entry::query()
+            ->where('collection', 'pages')
+            ->where('slug', $locale)
+            ->first();
         $page = Entry::query()
             ->where('collection', 'pages')
+            ->where('parent', '=', $localePage->id)
             ->where('slug', 'blog')
             ->first();
         $entries = Entry::query()
